@@ -11,7 +11,7 @@ class Dockmate < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/shubh-io/dockmate/releases/download/v0.0.9/dockmate-darwin-amd64"
-      sha256 "b1c0e73a53069c4547e6b6493e5285ceb8907c44a7e98232581058b468302554"
+      sha256 "42b286a0a4130c34685d8ad46c9b0873f34d4ba0c3fed92014979a9e5199c9c2"
 
       def install
         bin.install "dockmate-darwin-amd64" => "dockmate"
@@ -19,7 +19,7 @@ class Dockmate < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/shubh-io/dockmate/releases/download/v0.0.9/dockmate-darwin-arm64"
-      sha256 "172781f1512b39029daf7da4c3ffacca7422944cbe52cc986f62862b2c139100"
+      sha256 "87a1e9a5849eecc7402a207eb02f7987b8ae242f9d77b36c122c262538af0aa8"
 
       def install
         bin.install "dockmate-darwin-arm64" => "dockmate"
@@ -30,14 +30,14 @@ class Dockmate < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/shubh-io/dockmate/releases/download/v0.0.9/dockmate-linux-amd64"
-      sha256 "f248e7c653787d20662f1da58991375eebbe8da7dd19d55044a443920b3ed36e"
+      sha256 "fb86c90d573a9dee15b3259174625eb3ee1d90fa4bd8f57cc243f1d2cc6c03f9"
       def install
         bin.install "dockmate-linux-amd64" => "dockmate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/shubh-io/dockmate/releases/download/v0.0.9/dockmate-linux-arm64"
-      sha256 "b6be48ca0d7ddf0ff58561ad569a1c8f640369aea7d534196e194327d93d9db8"
+      sha256 "067e662a79e7c1bdff3314a5e74475dad676a7313f4001cf697a81ba9ec2a4e1"
       def install
         bin.install "dockmate-linux-arm64" => "dockmate"
       end
