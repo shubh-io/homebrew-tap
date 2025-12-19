@@ -5,21 +5,21 @@
 class Dockmate < Formula
   desc "Docker container monitoring TUI"
   homepage "https://github.com/shubh-io/DockMate"
-  version "0.0.9"
+  version "0.0.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shubh-io/dockmate/releases/download/v0.0.9/dockmate-darwin-amd64"
-      sha256 "42b286a0a4130c34685d8ad46c9b0873f34d4ba0c3fed92014979a9e5199c9c2"
+      url "https://github.com/shubh-io/dockmate/releases/download/v0.0.10/dockmate-darwin-amd64"
+      sha256 "a5828250bd994e72d4d1d37b6a33993c150ab12017beebac849583d7843e4b4d"
 
       def install
         bin.install "dockmate-darwin-amd64" => "dockmate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shubh-io/dockmate/releases/download/v0.0.9/dockmate-darwin-arm64"
-      sha256 "87a1e9a5849eecc7402a207eb02f7987b8ae242f9d77b36c122c262538af0aa8"
+      url "https://github.com/shubh-io/dockmate/releases/download/v0.0.10/dockmate-darwin-arm64"
+      sha256 "304dcb1a3d786957103e2644ee062fc52bcbde51d1ea851d5953da87773ae6fb"
 
       def install
         bin.install "dockmate-darwin-arm64" => "dockmate"
@@ -29,15 +29,15 @@ class Dockmate < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shubh-io/dockmate/releases/download/v0.0.9/dockmate-linux-amd64"
-      sha256 "fb86c90d573a9dee15b3259174625eb3ee1d90fa4bd8f57cc243f1d2cc6c03f9"
+      url "https://github.com/shubh-io/dockmate/releases/download/v0.0.10/dockmate-linux-amd64"
+      sha256 "496b7a302309017f64b8abbdf52cc473041cc2e79d681dba3e6680cec8faf385"
       def install
         bin.install "dockmate-linux-amd64" => "dockmate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shubh-io/dockmate/releases/download/v0.0.9/dockmate-linux-arm64"
-      sha256 "067e662a79e7c1bdff3314a5e74475dad676a7313f4001cf697a81ba9ec2a4e1"
+      url "https://github.com/shubh-io/dockmate/releases/download/v0.0.10/dockmate-linux-arm64"
+      sha256 "b305425fbaf7bc1c5dcc48e3a9fbf2df4bf4964e51b4d1570382f71180f8884d"
       def install
         bin.install "dockmate-linux-arm64" => "dockmate"
       end
